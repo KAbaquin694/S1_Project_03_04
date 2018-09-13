@@ -1,4 +1,18 @@
 ﻿@charset "utf-8";
+
+
+@font-face {
+    font-family: Champagne;
+    src: url('cac_champagne.woff') format('woff');
+    src: url('cac_champagne.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: Dobkin;
+    src: url('DobkinPlain.woff') format('woff');
+    src: url('DobkinPlain.ttf') format('truetype');
+}
+
 /*
    New Perspectives on HTML5 and CSS3, 7th Edition
    Tutorial 2
@@ -11,4 +25,110 @@
    Filename: lake_styles.css
 
 */
+/* Structure */
+html {
+    color: black;
+    background-color: rgb(212, 163, 240);
+}
 
+body {
+    background-color: hsl(33, 68%, 88%);
+}
+
+header {
+    background-color: palevioletred;
+}
+
+p {
+    margin: 5px;
+    padding: 5px 20px;
+}
+
+body p {
+    font-size: 1.3em;
+}
+
+footer {
+    font-style: normal;
+    font-size: 1em;
+    text-align: center;
+    padding: 7px;
+    background-color: palevioletred;
+}
+
+
+/* Navigation */
+
+nav a:link {
+    font-family: 'Trebuchet MS', 'Helvetica', sans-serif;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+nav>ul>li a:link,
+nav>ul>li>a:visited {
+    color: firebrick;
+    text-decoration: none;
+}
+
+nav>ul>li>a:hover,
+nav>ul>li>a:active {
+    color: hsla(0, 71%, 50%, 0.7);
+    background-color: hsla(332, 76%, 69%, 0.7);
+}
+
+/* Section */
+
+section#leftcol h1 {
+    font-size: 3em;
+    margin: 5px;
+    font-family: Champagne, sans-serif;
+}
+
+
+section#leftcol aside h1 {
+    font-family: none;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+section#leftcol aside {
+    background-color: rgba(128, 193, 247, 0.568);
+}
+
+section#leftcol aside section#rightcol ul {
+    list-style-type: none;
+}
+
+section#rightcol {
+    background-color: hsl(325, 73%, 75%);
+    margin-right: 0px;
+    list-style-type: none;
+
+    /* padding-left: 10px;
+    padding-right: 10px; */
+}
+
+section#rightcol nav h2 {
+    font-family: Dobkin, sans-serif;
+    padding-left: 30px;
+    font-size: 1.7em;
+}
+
+
+/* Blockquotes */
+blockquote {
+    font-size: 1.3em;
+}
+
+blockquote::before {
+    content: open-quote;
+    font-size: 1.6em;
+    font-weight: normal;
+}
+
+blockquote::after {
+    content: close-quote;
+    font-size: 1.6em;
+    font-weight: normal;
+}
