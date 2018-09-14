@@ -1,5 +1,6 @@
 ﻿@charset "utf-8";
 
+/* This block of code allows the custom fonts to be used on the webpage by downloading it from where it is hosted. */
 
 @font-face {
     font-family: Champagne;
@@ -25,6 +26,9 @@
    Filename: lake_styles.css
 
 */
+
+/* This block of code styles the general appeareance of the webpage */
+
 /* Structure */
 html {
     color: black;
@@ -57,6 +61,8 @@ footer {
 }
 
 
+/* This block of code styles the navigation bar & it's links such as when you hover over said link. */
+
 /* Navigation */
 
 nav a:link {
@@ -76,6 +82,8 @@ nav>ul>li>a:active {
     color: hsla(0, 71%, 50%, 0.7);
     background-color: hsla(332, 76%, 69%, 0.7);
 }
+
+/* This block of code styles the different sections of the webpage. */
 
 /* Section */
 
@@ -115,6 +123,7 @@ section#rightcol nav h2 {
     font-size: 1.7em;
 }
 
+/* This block of code styles the quotes of the webpage. */
 
 /* Blockquotes */
 blockquote {
